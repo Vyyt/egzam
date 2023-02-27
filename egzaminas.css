@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body {
+    max-width: 63rem;
+    margin: 0 auto;
+    }
+/*header*/
+header .top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    width: 100%;
+}
+header .desktop-nav a {
+    color: gray;
+    text-decoration: none;
+    padding: .625rem;
+}
+header .desktop-nav a:last-child {
+    color: rgb(244, 0, 249);
+}
+/*mobile screen*/
+@media screen and (max-width:60rem) {
+    header .desktop-nav {
+        display: none;
+    }
+}
+/*desktop screen*/
+@media screen and (min-width:60rem) {
+    header .ham-menu {
+        display: none;
+    }
+}
+/*main*/
+.box-one {
+    display: flex; 
+    width: 100%;
+    padding-top: 1.25rem; 
+              
+}
+.nft-info {
+    padding: 1.25rem 0 1.25rem 1.25rem;    
+    flex-basis: 50%;
+    flex-shrink: 0;    
+         
+}
+.nft-info h5 {
+    color: rgb(244, 0, 249);
+    padding-bottom: 1.25rem;
+}
+.nft-info h1 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding-bottom: 1.25rem;
+}
+.nft-info p {
+    color: gray;
+}
+.nft-info button {
+    border-radius: 1.875rem;
+    width: 10rem;
+    height: 3.125rem;
+    margin-top: 1.875rem;
+    font-weight: bold;
+    border-color: rgb(244, 0, 249);
+    }
+.nft-info button:hover {
+        background-color: rgb(244, 0, 249);
+    }
+.image-box {
+   flex-basis: 50%;
+    }
+.image-ciklop {
+    max-height: 23rem;
+}
+.image-upsell {
+    max-height: 21rem;
+    position: relative;
+    left: 6rem;
+    
+}
+.box-two {
+    background-image:url(background.svg);
+    height: 15rem;
+    min-width: 18.75rem;
+    border-radius: .625rem; 
+    padding: 5.625rem 0 0 1.25rem;  
+    
+}
+.box-two p {
+    padding-top: .625rem;
+}
+
+.company-links {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 1.875rem 1.5625rem;
+    gap: 0.6rem;
+    }
+
+/*desktop screen*/
+
+@media (min-width:60rem) {
+    .company-links {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        justify-content: space-between;
+    }
+}
+.company-links img {
+  height: 1.5rem;
+
+}
+.auction-info {
+    padding: 0 1.25rem 1.875rem;
+    }
+    .auction-info p {
+        padding-top: .625rem;
+        color: gray;
+    }
+    .auction-info a {
+        color: gray;
+    }
+    .auction-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: gray;
+    }
+    .auction-item {
+        padding-bottom: 1.25rem;
+    }
+    
+    .auction-item table {
+        width: 100%;
+            }
+    table .series,.name,.code {
+        text-align: left;
+    }
+    table .top-bid,.price,.days {
+        text-align: right;
+    }
+    .auction-item table img {
+        height: 1rem;
+        padding-right: .3125rem;
+
+    }
+    .table-head .series {
+        font-size: .625rem;
+        color: rgb(186, 186, 73);
+    }
+    .table-head {
+        font-size: .625rem;
+    
+    }
+    table .item-price {
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: black;
+    }
+
+
+    /*desktop screen*/
+
+@media (min-width:60rem) {
+    .auction-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        }
+        .auction-item img {
+            max-width: 15rem;
+            padding: .1rem;
+            
+        }
+}
+/*footer*/
+.footer-media {
+    padding: 1.25rem;
+}
+.footer-media a {
+    padding-right: .9375rem;
+}
+.footer-media h5 {
+    color: gray;
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding: .625rem 0 1rem 0;
+}
+.footer-links {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+.footer-links .flex {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    padding-left: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+.footer-links .flex a {
+    color: gray;
+    text-decoration: none;
+    padding-top: .3125rem;
+}
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem;
+    color: rgb(179, 176, 176);
+    font-size: .825rem;
+}
+/*footer desktop screen*/
+@media (min-width:60rem) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .footer-media {
+        flex: 50%;
+    }
+    .footer-links {
+        display: flex;
+        flex: 50%;
+        justify-content: space-around;
+    }
+    }
